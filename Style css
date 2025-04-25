@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  padding: 1em 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400/eeeeee/333333?text=Welcome+to+Manu\'s+Store') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.products-section {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+}
+
+.product-card {
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+.product-card h3 {
+  margin: 0.5em 0 0.2em;
+}
+
+.product-card p {
+  color: #444;
+  font-weight: bold;
+}
+
+.product-card button {
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #222;
+  color: white;
+  margin-top: 3em;
+}
